@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+  <!-- FontAwesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Skyrun Travels & Tours</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="jumbotron jumbotron-fluid text-white text-center">
+    <div class="container">
+      <h1 class="display-4">Explore the World with Us!</h1>
+      <p class="lead">Discover your next adventure.</p>
+      <a href="#destinations" class="btn btn-primary btn-lg">Start Your Journey</a>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="container my-5">
+    <h2 class="text-center mb-4">Popular Destinations</h2>
+    <div class="row">
+      <!-- Destination 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/travel2.jpg" class="card-img-top" alt="Destination 1">
+          <div class="card-body">
+            <h5 class="card-title">Touching Miami</h5>
+            <p class="card-text">Beautiful beaches and stunning scenery.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Destination 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/travel3.jpeg" class="card-img-top" alt="Destination 2">
+          <div class="card-body">
+            <h5 class="card-title">Destination 2</h5>
+            <p class="card-text">Experience culture and adventure.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Destination 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="public/travel4.webp" class="card-img-top" alt="Destination 3">
+          <div class="card-body">
+            <h5 class="card-title">Destination 3</h5>
+            <p class="card-text">Relax and unwind with breathtaking views.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section id="tours" class="container my-5">
+    <h2 class="text-center mb-4">Our Tours</h2>
+    <div class="accordion" id="tourAccordion">
+      <!-- Tour 1 -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Adventure Tour
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#tourAccordion"
+        >
+          <div class="card-body">
+            A thrilling experience full of adventure and excitement.
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tour 2 -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Culture Tour
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#tourAccordion"
+        >
+          <div class="card-body">
+            Discover local cultures and traditions on this amazing tour.
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Get in Touch</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Destination of Interest" required>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Travel Agency. All Rights Reserved.</p>
+    <div>
+      <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

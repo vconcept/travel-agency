@@ -1,0 +1,40 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Jumbotron/Hero Section */
+  .jumbotron {
+    background: url('public/travel.jpg') no-repeat center center/cover;
+    color: white;
+    height: 60vh;
+  }
+  
+  /* Destinations Section */
+  #destinations {
+    padding: 50px 0;
+  }
+
+  .card-img-top {
+    width: 360px;
+    height: 235px;
+  }
+  
+  /* Tours Section */
+  #tours {
+    padding: 50px 0;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #5fc921;
+    padding: 20px 0;
+  }
+  
